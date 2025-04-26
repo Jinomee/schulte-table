@@ -41,7 +41,7 @@ This project was built with:
 
 1. Clone the repository:
 ```
-git clone https://github.com/yourusername/schulte-table.git
+git clone https://github.com/Jinomee/schulte-table.git
 ```
 
 2. Install dependencies:
