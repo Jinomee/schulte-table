@@ -1,46 +1,65 @@
-# Getting Started with Create React App
+# Schulte Table Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a web-based implementation of the Schulte Table, a cognitive exercise designed to improve fast reading, peripheral vision, and attention.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Interactive grid displaying randomized numbers from 1 to N²
+- Supports variable grid sizes from 3x3 up to 9x9
+- Click on numbers in ascending order, starting from 1
+- Timer to track your completion time
+- Best time tracking for each grid size
+- Game counter to track how many games you've played
+- Responsive design that works on desktop and mobile devices
 
-### `npm start`
+## How to Play
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Select your desired grid size from the sidebar (default is 5x5)
+2. The game starts when you click on the first number (1)
+3. Continue clicking on numbers in ascending order (1, 2, 3, etc.)
+4. The timer will track how long it takes you to complete the sequence
+5. Your best times for each grid size will be saved
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Why Use Schulte Tables?
 
-### `npm test`
+Schulte Tables are used to:
+- Increase reading speed
+- Expand peripheral vision
+- Improve concentration
+- Enhance visual perception
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Regular practice with Schulte Tables can help improve cognitive abilities and reading speed.
 
-### `npm run build`
+## Development
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project was built with:
+- React
+- TypeScript
+- CSS3
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
+```
+git clone https://github.com/yourusername/schulte-table.git
+```
 
-### `npm run eject`
+2. Install dependencies:
+```
+cd schulte-table
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. Start the development server:
+```
+npm start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Build for production:
+```
+npm run build
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## License
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is open source and available under the [MIT License](LICENSE).

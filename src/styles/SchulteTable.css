@@ -1,0 +1,117 @@
+.schulte-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 650px;
+  width: 100%;
+  padding: 24px 20px;
+}
+
+.schulte-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.schulte-info {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--gray-700);
+  letter-spacing: 0.01em;
+}
+
+.schulte-info.time {
+  color: var(--accent-color);
+  font-variant-numeric: tabular-nums;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.schulte-grid {
+  display: grid;
+  gap: 4px;
+  aspect-ratio: 1/1;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid var(--gray-200);
+}
+
+.schulte-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  aspect-ratio: 1/1;
+  color: var(--gray-800);
+  transition: var(--transition);
+  border: 1px solid var(--gray-200);
+  letter-spacing: -0.02em;
+}
+
+.schulte-cell:hover {
+  background-color: var(--gray-100);
+}
+
+.schulte-cell.completed {
+  color: var(--gray-500);
+}
+
+.game-instructions {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: var(--gray-600);
+  letter-spacing: 0.01em;
+  font-weight: 400;
+}
+
+.restart-area {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.restart-button-text {
+  background-color: transparent;
+  border: none;
+  color: var(--gray-700);
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 8px 16px;
+  font-family: inherit;
+  transition: var(--transition);
+  border-radius: var(--border-radius-sm);
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.restart-button-text:hover {
+  color: var(--primary-color);
+  background-color: var(--gray-100);
+}
+
+@media (max-width: 768px) {
+  .schulte-cell {
+    font-size: 1.2rem;
+  }
+  
+  .schulte-container {
+    padding: 20px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .schulte-cell {
+    font-size: 1rem;
+  }
+  
+  .schulte-container {
+    padding: 15px 10px;
+  }
+} 

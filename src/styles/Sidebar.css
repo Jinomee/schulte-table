@@ -1,0 +1,135 @@
+.sidebar {
+  width: 240px;
+  background-color: var(--gray-100);
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  height: 100vh;
+  overflow-y: auto;
+  border-right: 1px solid var(--gray-200);
+}
+
+.logo {
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.logo h1 {
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.logo p {
+  font-size: 0.85rem;
+  color: var(--gray-600);
+  margin-top: 5px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.game-instructions {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.grid-size-control h2 {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: var(--gray-700);
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+
+.grid-size-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.grid-size-button {
+  background-color: transparent;
+  color: var(--gray-700);
+  padding: 6px 0;
+  font-size: 0.9rem;
+  border-radius: 0;
+  text-align: center;
+  transition: var(--transition);
+  letter-spacing: 0.01em;
+}
+
+.grid-size-button:hover {
+  background-color: var(--gray-200);
+}
+
+.grid-size-button.active {
+  background-color: var(--gray-200);
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.down-arrow {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 8px;
+  color: var(--gray-500);
+}
+
+.game-stats {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+
+.stat-label {
+  font-weight: 400;
+  color: var(--gray-600);
+  letter-spacing: 0.01em;
+  font-size: 0.9rem;
+}
+
+.stat-value {
+  font-weight: 500;
+  color: var(--primary-color);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.01em;
+  font-size: 1.1rem;
+}
+
+.best-times {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 220px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 20px;
+  }
+  
+  .app {
+    flex-direction: column;
+  }
+} 
